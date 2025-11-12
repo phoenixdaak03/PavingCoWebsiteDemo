@@ -1,5 +1,6 @@
 'use client';
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -57,8 +58,8 @@ export default function HomePage() {
               </li>
             </ul>
           </div>
-          <div className="bg-slate-700 h-80 rounded-lg flex items-center justify-center text-slate-500">
-            [Project Photo]
+          <div className="bg-slate-700 h-80 rounded-lg flex items-center justify-center text-slate-500 overflow-hidden">
+            <Image src="/pavingcrew.png" alt="Professional Paving Work" width={300} height={200} className="object-cover object-center w-full h-full"/>
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AboutPage() {
     return (
@@ -29,8 +30,8 @@ export default function AboutPage() {
                             exceptional results on every project, no matter the size or complexity.
                         </p>
                     </div>
-                    <div className="bg-gray-300 h-80 rounded-lg flex items-center justify-center">
-                        <span className="text-gray-600">Company Image</span>
+                    <div className="bg-gray-300 h-80 rounded-lg flex items-center justify-center overflow-hidden">
+                        <span className="text-gray-600 w-full"><Image src="/pavingcrew1.png" alt="Professional Paving Work" width={500} height={300} className="object-cover object-center w-full h-full"/></span>
                     </div>
                 </div>
             </section>
